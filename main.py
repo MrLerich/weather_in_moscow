@@ -18,11 +18,8 @@ getLoc = loc.geocode(city)
 
 
 if __name__ == "__main__":
-    # printing address
-    print("Местоположение: ", getLoc.address)
-    # printing latitude and longitude
-    print("Широта = ", getLoc.latitude)
-    print("Долгота = ", getLoc.longitude)
+    print('Местоположение: ', getLoc.address)
+    print(f'Координыты: \n\tширота = {getLoc.latitude} \n\tдолгота = {getLoc.longitude}')
     print(f'Сейчас в городе {city} {temperature}°C')
     print(f'Ощущается как {temperature_feels}°C')
 
